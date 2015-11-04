@@ -55,12 +55,16 @@ Note: Make sure you have enough storage allocated for your project.
 		);
 	}
 
-7. Commit and push your project:
+7. Add your project's remote Git repository:
+
+	git remote add platform <project_id>@git.<region_code>.platform.sh:<project_id>.git
+
+8. Commit and push your project:
 
 	git add .
 	git commit -a -m 'Add MongoDB'
-	git push
+	git push -u platform
 
-8. Log into Drupal, go to *admin/modules* and enable the MongoDB module.  Click *Save configuration*
-9. Now, enable any MongoDB sub-modules, for example *MongoDB watchdog* or *MongoDB Session* to store log entries and/or sessions in MongoDB.
+9. Log into Drupal, go to *admin/modules* and enable the MongoDB module.  Click *Save configuration*
+10. Now, enable any MongoDB sub-modules, for example *MongoDB watchdog* or *MongoDB Session* to store log entries and/or sessions in MongoDB.
 
