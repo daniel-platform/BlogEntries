@@ -134,6 +134,12 @@ to
            redirectPort="8443" />
 ```
 
+Alternativly, you can try this `sed` command:
+
+```
+sed -i '' -e 's/Connector port="8080"/Connector port="${port.http}"/' base/conf/server.xml
+```
+
 # How to Use
 
 Place your application's code in the `base/webapps` folder.
