@@ -32,7 +32,7 @@ tar -zxf ~/Downloads/jre-8u121-linux-x64.tar.gz
 mv /tmp/jre1.8.0_121/lib /tmp/jre1.8.0_121/bin ~/Projects/TomcatApp/jre/
 ```
 
-Extract Tomcat into a temporay folder.  Move the `bin`, `lib`, `conf` folders to you're project's tomcat folder.
+Extract Tomcat into a temporay folder.  Move the `bin` and `lib` folders to you're project's tomcat folder.
 
 ```
 cd /tmp
@@ -43,7 +43,7 @@ mv /tmp/apache-tomcat-8.5.11/bin /tmp/apache-tomcat-8.5.11/conf /tmp/apache-tomc
 For the purpose of this tutorial we will put in place the sample applications
 
 ```
-mv /tmp/apache-tomcat-8.5.11/webapps ~/Projects/TomcatApp/base/
+mv /tmp/apache-tomcat-8.5.11/webapps /tmp/apache-tomcat-8.5.11/conf ~/Projects/TomcatApp/base/
 ```
 
 ## YAML Files
