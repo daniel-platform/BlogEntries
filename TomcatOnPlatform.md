@@ -113,8 +113,7 @@ Place this script in the root of your project directory as `start.sh`
 
 export CATALINA_HOME=${PLATFORM_APP_DIR}/tomcat
 export CATALINA_BASE=${PLATFORM_APP_DIR}/base
-$CATALINA_HOME/bin/startup.sh
-tail -f
+$CATALINA_HOME/bin/catalina.sh run
 ```
 
 ## Listen Port Configuration
