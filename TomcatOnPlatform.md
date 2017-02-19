@@ -22,6 +22,7 @@ Create a new directory to hold your project files, the JRE, and the Tomcat appli
 
 ```
 mkdir -p ~/Projects/TomcatApp/jre ~/Projects/TomcatApp/tomcat ~/Projects/TomcatApp/base/bin ~/Projects/TomcatApp/.platform
+git init ~/Projects/TomcatApp
 ```
 
 Extract the JRE into a temporay folder.  Move the `bin` and `lib` folders to you're project's JRE folder.
@@ -142,4 +143,5 @@ sed -i '' -e 's/Connector port="8080"/Connector port="${port.http}"/' base/conf/
 
 # How to Use
 
-Place your application's code in the `base/webapps` folder.
+Place your application's code in the `base/webapps` folder. Then add, commit, and push to your plaform.sh project.
+
