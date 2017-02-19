@@ -82,7 +82,7 @@ touch .platform/services.yaml
 
 ## Scripts
 
-The purpose of the startup script is to set the enviromental variables to let tomcat know were it's located and were to find the JRE.  
+The purpose of the startup script is to set the enviromental variables to let tomcat know were it's located and where to load the apps from.  
 
 Place this script in `base/bin/setenv.sh`
 
