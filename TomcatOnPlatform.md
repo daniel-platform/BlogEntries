@@ -141,7 +141,19 @@ Alternativly, you can try this `sed` command:
 sed -i '' -e 's/Connector port="8080"/Connector port="${port.http}"/' base/conf/server.xml
 ```
 
+## Save
+
+```
+git add .
+git commit -m "Tomcat Example"
+```
+
 # How to Use
 
 Place your application's code in the `base/webapps` folder. Then add, commit, and push to your plaform.sh project.
+For example
 
+```
+git remote add platform <YOUR PROJECT's REPO>
+git push -u platform master
+```
