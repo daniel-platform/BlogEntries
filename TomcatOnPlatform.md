@@ -21,7 +21,7 @@ The tar.gz binary file is all you need.
 Create a new directory to hold your project files, the JRE, and the Tomcat application server's binaries.
 
 ```
-mkdir -p ~/Projects/TomcatApp/jre ~/Projects/TomcatApp/tomcat ~/Projects/TomcatApp/base ~/Projects/TomcatApp/.platform
+mkdir -p ~/Projects/TomcatApp/jre ~/Projects/TomcatApp/tomcat ~/Projects/TomcatApp/base/bin ~/Projects/TomcatApp/.platform
 ```
 
 Extract the JRE into a temporay folder.  Move the `bin` and `lib` folders to you're project's JRE folder.
