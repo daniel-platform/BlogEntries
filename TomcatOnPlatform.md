@@ -118,7 +118,7 @@ $CATALINA_HOME/bin/catalina.sh run
 
 ## Listen Port Configuration
 
-Edit the file `tomcat/conf/server.xml` locate following lines and modify the listen port
+Edit the file `base/conf/server.xml` locate following lines and modify the listen port
 
 ```
 <Connector port="8080" protocol="HTTP/1.1"
