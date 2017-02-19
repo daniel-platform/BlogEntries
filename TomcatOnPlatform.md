@@ -37,7 +37,7 @@ Extract Tomcat into a temporay folder.  Move the `bin` and `lib` folders to you'
 ```
 cd /tmp
 tar -zxf ~/Downloads/apache-tomcat-8.5.11.tar.gz 
-mv /tmp/apache-tomcat-8.5.11/bin /tmp/apache-tomcat-8.5.11/conf /tmp/apache-tomcat-8.5.11/lib /tmp/apache-tomcat-8.5.11/webapps ~/Projects/TomcatApp/tomcat/
+mv /tmp/apache-tomcat-8.5.11/bin /tmp/apache-tomcat-8.5.11/lib ~/Projects/TomcatApp/tomcat/
 ```
 
 For the purpose of this tutorial we will put in place the sample applications
