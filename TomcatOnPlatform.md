@@ -51,6 +51,14 @@ mv /tmp/apache-tomcat-8.5.11/webapps /tmp/apache-tomcat-8.5.11/conf ~/Projects/T
 Create a basic `.platform.app.yaml` file:
 
 ```
+cd ~/Projects/TomcatApp
+edit .platform.app.yaml
+```
+
+Paste in the following
+
+
+```
 name: tomcat
 type: python:2.7
 disk: 5120
@@ -69,6 +77,12 @@ web:
 Then drop-in a basic `.platform/routes.yaml`
 
 ```
+edit .platform/routes.yaml
+```
+
+Paste in the following
+
+```
 "http://{default}/":
    type: upstream
    upstream: "tomcat:http"
@@ -76,7 +90,7 @@ Then drop-in a basic `.platform/routes.yaml`
 
 For now just an empty `.platform/services.yaml` will do
 ```
-touch ~/Projects/TomcatApp/.platform/services.yaml
+touch .platform/services.yaml
 ```
 
 ## Scripts
