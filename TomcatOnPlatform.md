@@ -21,8 +21,9 @@ The tar.gz binary file is all you need.
 Create a new directory to hold your project files, the JRE, and the Tomcat application server's binaries.
 
 ```
-mkdir -p ~/Projects/TomcatApp/jre ~/Projects/TomcatApp/tomcat ~/Projects/TomcatApp/base/bin ~/Projects/TomcatApp/.platform
-git init ~/Projects/TomcatApp
+PROJECT_DIR=~/Projects/TomcatApp
+mkdir -p $PROJECT_DIR/jre $PROJECT_DIR/tomcat $PROJECT_DIR/base/bin $PROJECT_DIR/.platform
+git init $PROJECT_DIR
 ```
 
 Extract the JRE into a temporay folder.  Move the `bin` and `lib` folders to you're project's JRE folder.
@@ -30,7 +31,7 @@ Extract the JRE into a temporay folder.  Move the `bin` and `lib` folders to you
 ```
 cd /tmp
 tar -zxf ~/Downloads/jre-8u121-linux-x64.tar.gz
-mv /tmp/jre1.8.0_121/lib /tmp/jre1.8.0_121/bin ~/Projects/TomcatApp/jre/
+mv /tmp/jre1.8.0_121/lib /tmp/jre1.8.0_121/bin $PROJECT_DIR/jre/
 ```
 
 Extract Tomcat into a temporay folder.  Move the `bin` and `lib` folders to you're project's tomcat folder.
@@ -38,13 +39,13 @@ Extract Tomcat into a temporay folder.  Move the `bin` and `lib` folders to you'
 ```
 cd /tmp
 tar -zxf ~/Downloads/apache-tomcat-8.5.11.tar.gz 
-mv /tmp/apache-tomcat-8.5.11/bin /tmp/apache-tomcat-8.5.11/lib ~/Projects/TomcatApp/tomcat/
+mv /tmp/apache-tomcat-8.5.11/bin /tmp/apache-tomcat-8.5.11/lib $PROJECT_DIR/tomcat/
 ```
 
 For the purpose of this tutorial we will put in place the sample applications
 
 ```
-mv /tmp/apache-tomcat-8.5.11/webapps /tmp/apache-tomcat-8.5.11/conf ~/Projects/TomcatApp/base/
+mv /tmp/apache-tomcat-8.5.11/webapps /tmp/apache-tomcat-8.5.11/conf $PROJECT_DIR/base/
 ```
 
 ## YAML Files
@@ -52,7 +53,7 @@ mv /tmp/apache-tomcat-8.5.11/webapps /tmp/apache-tomcat-8.5.11/conf ~/Projects/T
 Create a basic `.platform.app.yaml` file:
 
 ```
-cd ~/Projects/TomcatApp
+cd $PROJECT_DIR
 edit .platform.app.yaml
 ```
 
